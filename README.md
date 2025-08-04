@@ -81,6 +81,4 @@ Contribuições são bem-vindas! Sinta-se livre para abrir issues ou enviar pull
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 🙋‍♂️ Autor
-Desenvolvido por Seu Nome
-📧 seu.email@exemplo.com
-🔗 LinkedIn | GitHub
+Desenvolvido por Matheus Mendes   
