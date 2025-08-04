@@ -27,7 +27,7 @@ Jarvis é um assistente virtual pessoal desenvolvido em Python. Inspirado no ic�
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/jarvis.git
+   git clone https://github.com/matheusfmendes/jarvis.git
    cd jarvis
 Crie e ative um ambiente virtual (opcional, mas recomendado):
 
@@ -63,6 +63,7 @@ Fale com o Jarvis! Exemplos de comandos:
 📁 Estrutura do Projeto
 Copiar
 Editar
+```text
 jarvis/
 ├── jarvis.py
 ├── comandos/
@@ -74,6 +75,7 @@ jarvis/
 │   └── voz.py
 ├── requirements.txt
 └── README.md
+```
 📌 Contribuindo
 Contribuições são bem-vindas! Sinta-se livre para abrir issues ou enviar pull requests.
 
