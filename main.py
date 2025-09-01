@@ -15,7 +15,7 @@ def speak(text):
 def listen():
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
-        print("🎤 Ouvindo...")
+        print("Ouvindo...")
         audio = recognizer.listen(source)
     try:
         command = recognizer.recognize_google(audio, language="pt-BR")
@@ -41,5 +41,5 @@ if __name__ == "__main__":
             speak("Até logo!")
             break
         response = chat_with_gpt(command)
-        print("🤖 Jarvis:", response)
+        print("Jarvis:", response)
         speak(response)
