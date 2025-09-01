@@ -1,86 +1,40 @@
-# 🧠 Jarvis - Assistente Virtual em Python
+# Jarvis Assistant
 
-Jarvis é um assistente virtual pessoal desenvolvido em Python. Inspirado no icônico assistente de Tony Stark, este projeto tem como objetivo executar comandos por voz, automatizar tarefas e interagir com o usuário de forma inteligente e intuitiva.
+Um assistente de voz simples em Python integrado ao ChatGPT.
 
 ## 🚀 Funcionalidades
-
-- 🎙️ Reconhecimento de voz (speech-to-text)
-- 🗣️ Respostas por voz (text-to-speech)
-- 📅 Consulta de data e hora
-- 🌐 Pesquisa na web (Google/Wikipedia)
-- 📧 Envio de e-mails
-- 💻 Execução de comandos no sistema
-- 🧩 Estrutura modular para fácil expansão
-
-## 🛠️ Tecnologias Utilizadas
-
-- Python 3.8+
-- `speech_recognition`
-- `pyttsx3`
-- `wikipedia`
-- `pywhatkit`
-- `smtplib` / `email`
-- `datetime`
-- `os`, `subprocess`
+- Reconhecimento de voz (Google STT via SpeechRecognition)
+- Resposta em voz (pyttsx3 TTS)
+- Integração com ChatGPT
 
 ## 📦 Instalação
 
-1. Clone o repositório:
+1. Clone este repositório ou extraia o `.zip`.
+2. Crie um ambiente virtual (opcional):
    ```bash
-   git clone https://github.com/matheusfmendes/jarvis.git
-   cd jarvis
-Crie e ative um ambiente virtual (opcional, mas recomendado):
+   python -m venv venv
+   source venv/bin/activate   # Linux/Mac
+   venv\Scripts\activate    # Windows
+   ```
+3. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-bash
-Copiar
-Editar
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-.\venv\Scripts\activate    # Windows
-Instale as dependências:
+## ▶️ Uso
 
-bash
-Copiar
-Editar
-pip install -r requirements.txt
-▶️ Como usar
-Execute o assistente:
+1. Substitua `SUA_API_KEY_AQUI` pela sua chave da API da OpenAI em `main.py`.
+2. Execute:
+   ```bash
+   python main.py
+   ```
+3. Fale com o Jarvis! Para encerrar, diga **"sair"**.
 
-bash
-Copiar
-Editar
-python jarvis.py
-Fale com o Jarvis! Exemplos de comandos:
+---
 
-"Que horas são?"
-
-"Procure por inteligência artificial na Wikipédia"
-
-"Toque uma música no YouTube"
-
-"Envie um e-mail para João"
-
-📁 Estrutura do Projeto
-Copiar
-Editar
-```text
-jarvis/
-├── jarvis.py
-├── comandos/
-│   ├── tempo.py
-│   ├── wikipedia.py
-│   └── sistema.py
-├── utils/
-│   ├── reconhecimento.py
-│   └── voz.py
-├── requirements.txt
-└── README.md
-```
-📌 Contribuindo
-Contribuições são bem-vindas! Sinta-se livre para abrir issues ou enviar pull requests.
-
-📄 Licença
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-🙋‍♂️ Autor
-Desenvolvido por Matheus Mendes   
+## 🔮 Melhorias Futuras
+- TTS mais natural (ElevenLabs, Edge TTS)
+- STT offline (Vosk)
+- Detecção de palavra-chave (Porcupine)
+- Interface gráfica (Flask + Web)
+- Streaming (responder enquanto pensa)
